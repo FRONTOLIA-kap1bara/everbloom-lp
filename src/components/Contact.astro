@@ -1,0 +1,269 @@
+---
+---
+
+<section id="contact" class="contact">
+	<div class="container">
+		<h2 class="section-title">お問い合わせ&お申し込み</h2>
+		
+		<div class="contact-content">
+			<div class="contact-message animate-fadeInUp">
+				<p>相談だけでも構いません！<br>ぜひお気軽にご相談ください！</p>
+			</div>
+			
+			<div class="contact-buttons animate-slideInUp">
+				<a href="https://lin.ee/jPvpa5H" class="contact-btn line-btn">
+					<div class="btn-icon">💬</div>
+					<div class="btn-content">
+						<div class="btn-title">LINEで相談またはお申し込み</div>
+						<div class="btn-subtitle">お気軽にメッセージください</div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="contact-features animate-fadeInUp">
+				<div class="feature-item">
+					<div class="feature-icon">⚡</div>
+					<div class="feature-text">
+						<h4>即レス対応</h4>
+						<p>平日は48時間以内に返信します</p>
+					</div>
+				</div>
+				
+				<div class="feature-item">
+					<div class="feature-icon">💝</div>
+					<div class="feature-text">
+						<h4>相談無料</h4>
+						<p>どんな質問でもお気軽にどうぞ</p>
+					</div>
+				</div>
+				
+				<div class="feature-item">
+					<div class="feature-icon">🎯</div>
+					<div class="feature-text">
+						<h4>要望ヒアリング</h4>
+						<p>詳しく要望をお聞きします</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.contact {
+		background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+	}
+
+	.section-title {
+		text-align: center;
+		margin-bottom: 60px;
+		color: #2c3e50;
+		position: relative;
+	}
+
+	.section-title::after {
+		content: '';
+		position: absolute;
+		bottom: -10px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100px;
+		height: 4px;
+		background: linear-gradient(135deg, #ff6b9d, #c44569);
+		border-radius: 2px;
+	}
+
+	.contact-content {
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.contact-message {
+		margin-bottom: 50px;
+	}
+
+	.contact-message p {
+		font-size: 1.4rem;
+		color: #2c3e50;
+		line-height: 1.8;
+		font-weight: 500;
+	}
+
+	.contact-buttons {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 60px;
+	}
+
+	.contact-btn {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		padding: 30px 40px;
+		background: white;
+		border-radius: 20px;
+		text-decoration: none;
+		color: #2c3e50;
+		box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+		transition: all 0.3s ease;
+		min-width: 320px;
+		max-width: 100%;
+	}
+
+	.contact-btn:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+	}
+
+	.line-btn:hover {
+		background: linear-gradient(135deg, #00c851, #20bf6b);
+		color: white;
+	}
+
+	.btn-icon {
+		font-size: 2.5rem;
+		animation: bounce 2s infinite;
+		flex-shrink: 0;
+	}
+
+	.btn-content {
+		text-align: left;
+		flex: 1;
+	}
+
+	.btn-title {
+		font-size: 1.3rem;
+		font-weight: 700;
+		margin-bottom: 5px;
+		line-height: 1.3;
+	}
+
+	.btn-subtitle {
+		font-size: 0.9rem;
+		opacity: 0.8;
+	}
+
+	.contact-features {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 30px;
+	}
+
+	.feature-item {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		background: rgba(255,255,255,0.3);
+		padding: 20px;
+		border-radius: 15px;
+		backdrop-filter: blur(10px);
+		transition: all 0.3s ease;
+	}
+
+	.feature-item:hover {
+		background: rgba(255,255,255,0.5);
+		transform: translateY(-3px);
+	}
+
+	.feature-icon {
+		font-size: 2rem;
+		flex-shrink: 0;
+	}
+
+	.feature-text {
+		text-align: left;
+		flex: 1;
+	}
+
+	.feature-text h4 {
+		font-size: 1.1rem;
+		color: #2c3e50;
+		margin-bottom: 5px;
+		font-weight: 700;
+	}
+
+	.feature-text p {
+		font-size: 0.9rem;
+		color: #555;
+		margin: 0;
+		line-height: 1.4;
+	}
+
+	/* タブレット対応 */
+	@media (max-width: 1024px) {
+		.contact-btn {
+			min-width: 280px;
+			padding: 25px 30px;
+		}
+
+		.btn-title {
+			font-size: 1.2rem;
+		}
+
+		.contact-features {
+			grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+			gap: 25px;
+		}
+	}
+
+	/* スマホ対応 */
+	@media (max-width: 768px) {
+		.contact-btn {
+			min-width: auto;
+			width: 100%;
+			max-width: 350px;
+			padding: 20px 25px;
+			flex-direction: column;
+			text-align: center;
+			gap: 15px;
+		}
+
+		.btn-content {
+			text-align: center;
+		}
+
+		.btn-title {
+			font-size: 1.1rem;
+		}
+
+		.contact-message p {
+			font-size: 1.2rem;
+		}
+
+		.contact-features {
+			grid-template-columns: 1fr;
+			gap: 20px;
+		}
+
+		.feature-item {
+			padding: 15px;
+			flex-direction: column;
+			text-align: center;
+			gap: 10px;
+		}
+
+		.feature-text {
+			text-align: center;
+		}
+	}
+
+	/* 小さなスマホ対応 */
+	@media (max-width: 480px) {
+		.contact-btn {
+			padding: 18px 20px;
+		}
+
+		.btn-title {
+			font-size: 1rem;
+		}
+
+		.btn-subtitle {
+			font-size: 0.8rem;
+		}
+
+		.contact-message p {
+			font-size: 1.1rem;
+		}
+	}
+</style>

@@ -1,0 +1,285 @@
+---
+---
+
+<section class="hero">
+	<div class="hero-background"></div>
+	<div class="container">
+		<div class="hero-content">
+			<div class="hero-logo animate-bounce">
+				<img src="/everbloomtoumei.png" alt="EverBloom" class="hero-logo-image" />
+				<div class="logo-kana">エバーブルーム</div>
+			</div>
+			<div class="hero-text">
+				<h1 class="hero-title animate-fadeInUp">
+					<span class="highlight">これ一択!思い通りに最高の動画を編集します！</span><br><br>
+					追加料金なし！<br>
+					卒業、結婚動画などすべてに対応！<br>
+					編集者と直接相談で低価格を実現！<br>
+					何でも相談できる！
+				</h1>
+				<p class="hero-subtitle animate-slideInRight">
+					卒業、結婚、思い出動画など、あなたの大切な瞬間を<br>
+					プロの編集者が心を込めて動画にします
+				</p>
+			</div>
+			<div class="hero-buttons animate-slideInLeft">
+				<a href="#contact" class="btn btn-contact">
+					今すぐ相談する
+				</a>
+				<a href="#features" class="btn">
+					詳細を見る
+				</a>
+			</div>
+		</div>
+		<div class="floating-elements">
+			<div class="floating-element element1">🎬</div>
+			<div class="floating-element element2">✨</div>
+			<div class="floating-element element3">🎥</div>
+			<div class="floating-element element4">💖</div>
+			<div class="floating-element element5">🎉</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.hero {
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		position: relative;
+		overflow: hidden;
+		padding-top: 120px;
+	}
+
+	.hero-background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		background-size: 400% 400%;
+		animation: gradient-shift 8s ease infinite;
+		opacity: 0.1;
+	}
+
+	.hero-background::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="25" cy="25" r="2" fill="%23ff6b9d" opacity="0.3"><animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/></circle><circle cx="75" cy="25" r="2" fill="%2300c9ff" opacity="0.3"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/></circle><circle cx="25" cy="75" r="2" fill="%2392fe9d" opacity="0.3"><animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/></circle><circle cx="75" cy="75" r="2" fill="%23ff6b9d" opacity="0.3"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/></circle></svg>') repeat;
+		background-size: 200px 200px;
+	}
+
+	.hero-content {
+		text-align: center;
+		position: relative;
+		z-index: 2;
+		padding: 40px 0;
+	}
+
+	.hero-logo {
+		margin-bottom: 40px;
+	}
+
+	.hero-logo-image {
+		height: 140px;
+		width: auto;
+		animation: float 3s ease-in-out infinite;
+		filter: drop-shadow(0 0 20px rgba(255, 107, 157, 0.3));
+		max-width: 100%;
+		object-fit: contain;
+	}
+
+	.hero-title {
+		font-size: 3.2rem;
+		line-height: 1.2;
+		margin-bottom: 30px;
+		text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+	}
+
+	.hero-subtitle {
+		font-size: 1.3rem;
+		color: #666;
+		margin-bottom: 40px;
+		line-height: 1.8;
+	}
+
+	.hero-buttons {
+		display: flex;
+		gap: 20px;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.floating-elements {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		pointer-events: none;
+	}
+
+	.floating-element {
+		position: absolute;
+		font-size: 2rem;
+		animation: float 4s ease-in-out infinite;
+		opacity: 0.7;
+	}
+
+	.element1 {
+		top: 20%;
+		left: 10%;
+		animation-delay: 0s;
+	}
+
+	.element2 {
+		top: 30%;
+		right: 15%;
+		animation-delay: 0.5s;
+	}
+
+	.element3 {
+		bottom: 30%;
+		left: 20%;
+		animation-delay: 1s;
+	}
+
+	.element4 {
+		bottom: 20%;
+		right: 10%;
+		animation-delay: 1.5s;
+	}
+
+	.element5 {
+		top: 60%;
+		left: 50%;
+		animation-delay: 2s;
+	}
+
+	/* タブレット対応 */
+	@media (max-width: 1024px) {
+		.hero {
+			padding-top: 100px;
+		}
+
+		.hero-content {
+			padding: 30px 0;
+		}
+
+		.hero-logo {
+			margin-bottom: 35px;
+		}
+
+		.hero-logo-image {
+			height: 120px;
+		}
+
+		.hero-title {
+			font-size: 2.8rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.2rem;
+		}
+
+		.floating-element {
+			font-size: 1.8rem;
+		}
+	}
+
+	/* スマホ対応 */
+	@media (max-width: 768px) {
+		.hero {
+			padding-top: 90px;
+			min-height: 90vh;
+		}
+
+		.hero-content {
+			padding: 20px 10px;
+		}
+
+		.hero-logo {
+			margin-bottom: 30px;
+		}
+
+		.hero-logo-image {
+			height: 100px;
+		}
+
+		.hero-title {
+			font-size: 2.2rem;
+			line-height: 1.3;
+		}
+
+		.hero-subtitle {
+			font-size: 1.1rem;
+			margin-bottom: 30px;
+		}
+
+		.hero-buttons {
+			flex-direction: column;
+			align-items: center;
+			gap: 15px;
+		}
+
+		.floating-element {
+			font-size: 1.5rem;
+		}
+	}
+
+	/* 小さなスマホ対応 */
+	@media (max-width: 480px) {
+		.hero {
+			padding-top: 80px;
+		}
+
+		.hero-content {
+			padding: 15px 5px;
+		}
+
+		.hero-logo {
+			margin-bottom: 25px;
+		}
+
+		.hero-logo-image {
+			height: 80px;
+		}
+
+		.hero-title {
+			font-size: 1.8rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1rem;
+		}
+
+		.floating-element {
+			font-size: 1.2rem;
+		}
+	}
+
+	.highlight {
+		font-weight: bold;
+		color: #ff6b6b;
+		text-shadow: 0 0 10px rgba(255, 107, 107, 0.3);
+	}
+
+	.logo-kana {
+		font-size: 1.15rem;
+		font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+		margin-top: 8px;
+		letter-spacing: 0.18em;
+		font-weight: 700;
+		background: linear-gradient(90deg, #ff6b9d 0%, #667eea 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		text-shadow: 0 2px 8px rgba(255, 107, 157, 0.08);
+	}
+</style>

@@ -1,0 +1,333 @@
+---
+---
+
+<section id="faq" class="faq">
+	<div class="container">
+		<h2 class="section-title">よくある質問</h2>
+		
+		<div class="faq-intro">
+			<p>何でも気になったら気軽に聞いて下さい！</p>
+		</div>
+
+		<div class="faq-list">
+			<div class="faq-item animate-fadeInUp">
+				<div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+					<span class="faq-q">Q.</span>
+					<span>納品方法は選択できますか？</span>
+					<span class="faq-toggle" aria-hidden="true">+</span>
+				</div>
+				<div class="faq-answer" role="region">
+					<span class="faq-a">A.</span>
+					<span>基本的にmp4形式で要望に応じてDVDで発送することも可能です。</span>
+				</div>
+			</div>
+
+			<div class="faq-item animate-fadeInUp">
+				<div class="faq-question">
+					<span class="faq-q">Q.</span>
+					<span>スタジオ撮影はできますか？</span>
+					<span class="faq-toggle">+</span>
+				</div>
+				<div class="faq-answer">
+					<span class="faq-a">A.</span>
+					<span>スタジオはありません。ご自身で撮影した写真や動画をいただく形になります。</span>
+				</div>
+			</div>
+
+			<div class="faq-item animate-fadeInUp">
+				<div class="faq-question">
+					<span class="faq-q">Q.</span>
+					<span>お支払い方法は？</span>
+					<span class="faq-toggle">+</span>
+				</div>
+				<div class="faq-answer">
+					<span class="faq-a">A.</span>
+					<span>どのような形態でも大丈夫です。相談時にお聞きします。</span>
+				</div>
+			</div>
+
+			<div class="faq-item animate-fadeInUp">
+				<div class="faq-question">
+					<span class="faq-q">Q.</span>
+					<span>領収書の発行はできますか？</span>
+					<span class="faq-toggle">+</span>
+				</div>
+				<div class="faq-answer">
+					<span class="faq-a">A.</span>
+					<span>できます。相談時に編集者にお伝え下さい。</span>
+				</div>
+			</div>
+
+			<div class="faq-item animate-fadeInUp">
+				<div class="faq-question">
+					<span class="faq-q">Q.</span>
+					<span>打ち合わせは電話ですか？</span>
+					<span class="faq-toggle">+</span>
+				</div>
+				<div class="faq-answer">
+					<span class="faq-a">A.</span>
+					<span>いいえ、基本はLINEで行います。</span>
+				</div>
+			</div>
+
+			<div class="faq-item animate-fadeInUp">
+				<div class="faq-question">
+					<span class="faq-q">Q.</span>
+					<span>相談だけでもいいですか？</span>
+					<span class="faq-toggle">+</span>
+				</div>
+				<div class="faq-answer">
+					<span class="faq-a">A.</span>
+					<span>もちろんです。お気軽にお問い合わせください。</span>
+				</div>
+			</div>
+
+			<div class="faq-item animate-fadeInUp">
+				<div class="faq-question">
+					<span class="faq-q">Q.</span>
+					<span>キャンセルしたい場合はどうすればいいですか？</span>
+					<span class="faq-toggle">+</span>
+				</div>
+				<div class="faq-answer">
+					<span class="faq-a">A.</span>
+					<span>すでに動画の作成を行っていた場合は着手具合に応じて開始時に提示した金額未満をいただきます。</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="faq-contact">
+			<a href="#contact" class="btn btn-contact">お問い合わせはこちらから！</a>
+		</div>
+	</div>
+</section>
+
+<style>
+	.faq {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+	}
+
+	.section-title {
+		text-align: center;
+		margin-bottom: 30px;
+		color: white;
+		position: relative;
+	}
+
+	.section-title::after {
+		content: '';
+		position: absolute;
+		bottom: -10px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100px;
+		height: 4px;
+		background: linear-gradient(135deg, #00c9ff, #92fe9d);
+		border-radius: 2px;
+	}
+
+	.faq-intro {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	.faq-intro p {
+		font-size: 1.3rem;
+		margin-bottom: 20px;
+		color: rgba(255,255,255,0.9);
+	}
+
+	.faq-list {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.faq-item {
+		background: rgba(255,255,255,0.1);
+		backdrop-filter: blur(10px);
+		border-radius: 15px;
+		margin-bottom: 15px;
+		overflow: hidden;
+		transition: all 0.3s ease;
+	}
+
+	.faq-item:hover {
+		background: rgba(255,255,255,0.15);
+		transform: translateY(-2px);
+	}
+
+	.faq-question {
+		padding: 25px 30px;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		transition: all 0.3s ease;
+	}
+
+	.faq-question:hover {
+		background: rgba(255,255,255,0.05);
+	}
+
+	.faq-q {
+		font-weight: 900;
+		font-size: 1.2rem;
+		color: #00c9ff;
+		min-width: 25px;
+	}
+
+	.faq-toggle {
+		margin-left: auto;
+		font-size: 1.5rem;
+		font-weight: bold;
+		transition: transform 0.3s ease;
+		color: #92fe9d;
+	}
+
+	.faq-item.active .faq-toggle {
+		transform: rotate(45deg);
+	}
+
+	.faq-answer {
+		padding: 0 30px 25px;
+		display: none;
+		animation: fadeInUp 0.3s ease;
+		color: rgba(255,255,255,0.9);
+		line-height: 1.8;
+	}
+
+	.faq-answer.active {
+		display: flex;
+		gap: 15px;
+	}
+
+	.faq-a {
+		font-weight: 900;
+		font-size: 1.2rem;
+		color: #92fe9d;
+		min-width: 25px;
+	}
+
+	.faq-contact {
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.scroll-to-top {
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		background: linear-gradient(135deg, #00c9ff, #92fe9d);
+		color: white;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		font-weight: bold;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease;
+		z-index: 1000;
+	}
+
+	.scroll-to-top.visible {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.scroll-to-top:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+	}
+
+	@media (max-width: 768px) {
+		.faq-question {
+			padding: 20px;
+		}
+
+		.faq-answer {
+			padding: 0 20px 20px;
+		}
+
+		.faq-intro p {
+			font-size: 1.1rem;
+		}
+
+		.scroll-to-top {
+			bottom: 20px;
+			right: 20px;
+			width: 50px;
+			height: 50px;
+			font-size: 0.9rem;
+		}
+	}
+</style>
+
+<a href="#" class="scroll-to-top" id="scrollToTop">TOPへ</a>
+
+<script>
+	const faqItems = document.querySelectorAll('.faq-item');
+	const scrollToTop = document.getElementById('scrollToTop');
+	
+	// スクロールトップボタンの表示/非表示
+	window.addEventListener('scroll', () => {
+		if (scrollToTop) {
+			if (window.scrollY > 300) {
+				scrollToTop.classList.add('visible');
+			} else {
+				scrollToTop.classList.remove('visible');
+			}
+		}
+	});
+
+	// スクロールトップボタンのクリックイベント
+	scrollToTop?.addEventListener('click', (e) => {
+		e.preventDefault();
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		});
+	});
+	
+	faqItems.forEach(item => {
+		const question = item.querySelector('.faq-question') as HTMLElement;
+		const answer = item.querySelector('.faq-answer') as HTMLElement;
+		
+		if (question && answer) {
+			question.addEventListener('click', () => {
+				const isActive = item.classList.contains('active');
+				const isExpanded = question.getAttribute('aria-expanded') === 'true';
+				
+				// Close all other items
+				faqItems.forEach(otherItem => {
+					otherItem.classList.remove('active');
+					const otherQuestion = otherItem.querySelector('.faq-question') as HTMLElement;
+					const otherAnswer = otherItem.querySelector('.faq-answer') as HTMLElement;
+					if (otherQuestion && otherAnswer) {
+						otherQuestion.setAttribute('aria-expanded', 'false');
+						otherAnswer.classList.remove('active');
+					}
+				});
+				
+				// Toggle current item
+				if (!isActive) {
+					item.classList.add('active');
+					question.setAttribute('aria-expanded', 'true');
+					answer.classList.add('active');
+				}
+			});
+
+			// キーボード操作のサポート
+			question.addEventListener('keydown', (e: KeyboardEvent) => {
+				if (e.key === 'Enter' || e.key === ' ') {
+					e.preventDefault();
+					question.click();
+				}
+			});
+		}
+	});
+</script>

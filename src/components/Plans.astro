@@ -1,0 +1,323 @@
+---
+---
+
+<section id="plans" class="plans">
+	<div class="container">
+		<h2 class="section-title">料金プラン</h2>
+		
+		<div class="plans-grid">
+			<div class="plan-card school-plan animate-slideInLeft">
+				<div class="plan-header">
+					<div class="plan-icon">🎓</div>
+					<h3>スクールプラン</h3>
+					<div class="plan-price">
+						<span class="price">¥2,500</span>
+						<span class="price-unit">～（学割込み）</span>
+					</div>
+				</div>
+				
+				<div class="plan-content">
+					<div class="plan-info">
+						<h4>対象</h4>
+						<p>学園祭・文化祭・体育大会などの思い出動画、オープニング・エンディングムービー、サプライズ動画、卒業・卒部動画、などの学校関係動画</p>
+					</div>
+					
+					<div class="plan-info">
+						<h4>形態</h4>
+						<p>思い出動画、歌詞動画、オープニング・エンディングムービー</p>
+					</div>
+					
+					<div class="plan-info">
+						<h4>動画詳細</h4>
+						<p>写真、動画を依頼者からいただき動画を作成します。動画にはテキスト、音楽、アニメーション、トランジション、エフェクトなどを使用します。</p>
+					</div>
+					
+					<div class="plan-specs">
+						<div class="spec-item">
+							<span class="spec-label">完成動画時間</span>
+							<span class="spec-value">～15分</span>
+						</div>
+						<div class="spec-item">
+							<span class="spec-label">期間</span>
+							<span class="spec-value">2週間前目安</span>
+						</div>
+					</div>
+					
+					<div class="plan-discount">
+						<h4>学割対象</h4>
+						<p>小学校～高校、5分未満の動画、学生証の提示、教員の方はそれが証明できるもの</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="plan-card wedding-plan animate-slideInRight">
+				<div class="plan-header">
+					<div class="plan-icon">💒</div>
+					<h3>ウエディングプラン</h3>
+					<div class="plan-price">
+						<span class="price">¥15,000</span>
+						<span class="price-unit">～</span>
+					</div>
+				</div>
+				
+				<div class="plan-content">
+					<div class="plan-info">
+						<h4>対象</h4>
+						<p>結婚式関連の動画</p>
+					</div>
+					
+					<div class="plan-info">
+						<h4>形態</h4>
+						<p>プロフィールムービー、オープニングムービー、思い出動画</p>
+					</div>
+					
+					<div class="plan-info">
+						<h4>動画詳細</h4>
+						<p>写真、動画を依頼者からいただき動画を作成します。動画にはテキスト、音楽、アニメーション、トランジション、エフェクトなどを使用します。</p>
+					</div>
+					
+					<div class="plan-specs">
+						<div class="spec-item">
+							<span class="spec-label">完成動画時間</span>
+							<span class="spec-value">～15分</span>
+						</div>
+						<div class="spec-item">
+							<span class="spec-label">期間</span>
+							<span class="spec-value">3週間前目安</span>
+						</div>
+					</div>
+					
+					<div class="plan-discount">
+						<h4>学割対象</h4>
+						<p>なし</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.plans {
+		background: white;
+	}
+
+	.section-title {
+		text-align: center;
+		margin-bottom: 60px;
+		position: relative;
+	}
+
+	.section-title::after {
+		content: '';
+		position: absolute;
+		bottom: -10px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100px;
+		height: 4px;
+		background: linear-gradient(135deg, #ff6b9d, #c44569);
+		border-radius: 2px;
+	}
+
+	.plans-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		gap: 40px;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.plan-card {
+		background: white;
+		border-radius: 25px;
+		overflow: hidden;
+		box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+		transition: all 0.3s ease;
+		position: relative;
+	}
+
+	.plan-card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 5px;
+	}
+
+	.school-plan::before {
+		background: linear-gradient(135deg, #667eea, #764ba2);
+	}
+
+	.wedding-plan::before {
+		background: linear-gradient(135deg, #ff9a9e, #fecfef);
+	}
+
+	.plan-card:hover {
+		transform: translateY(-10px);
+		box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+	}
+
+	.plan-header {
+		padding: 40px 30px 30px;
+		text-align: center;
+		background: linear-gradient(135deg, #f8f9fc, #eef2f7);
+	}
+
+	.plan-icon {
+		font-size: 4rem;
+		margin-bottom: 20px;
+		animation: bounce 2s infinite;
+	}
+
+	.plan-header h3 {
+		font-size: 2rem;
+		color: #2c3e50;
+		margin-bottom: 20px;
+	}
+
+	.plan-price {
+		display: flex;
+		align-items: baseline;
+		justify-content: center;
+		gap: 5px;
+	}
+
+	.price {
+		font-size: 3rem;
+		font-weight: 900;
+		background: linear-gradient(135deg, #ff6b9d, #c44569);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.price-unit {
+		font-size: 1.2rem;
+		color: #666;
+	}
+
+	.plan-content {
+		padding: 30px;
+	}
+
+	.plan-info {
+		margin-bottom: 25px;
+	}
+
+	.plan-info h4 {
+		font-size: 1.3rem;
+		color: #34495e;
+		margin-bottom: 10px;
+		font-weight: 700;
+	}
+
+	.plan-info p {
+		color: #555;
+		line-height: 1.6;
+	}
+
+	.plan-specs {
+		background: #f8f9fc;
+		border-radius: 12px;
+		padding: 20px;
+		margin: 25px 0;
+	}
+
+	.spec-item {
+		display: flex;
+		justify-content: space-between;
+		padding: 8px 0;
+		border-bottom: 1px solid #e1e8ed;
+	}
+
+	.spec-item:last-child {
+		border-bottom: none;
+	}
+
+	.spec-label {
+		font-weight: 600;
+		color: #34495e;
+	}
+
+	.spec-value {
+		color: #666;
+		font-weight: 500;
+	}
+
+	.plan-discount {
+		background: linear-gradient(135deg, #ffecd2, #fcb69f);
+		border-radius: 12px;
+		padding: 20px;
+		margin-top: 25px;
+	}
+
+	.plan-discount h4 {
+		color: #d35400;
+		margin-bottom: 10px;
+	}
+
+	.plan-discount p {
+		color: #8b4513;
+		margin: 0;
+	}
+
+	@media (max-width: 768px) {
+		.plans-grid {
+			grid-template-columns: 1fr;
+			gap: 30px;
+			padding: 0 15px;
+		}
+
+		.plan-card {
+			margin: 0;
+		}
+
+		.plan-header {
+			padding: 30px 20px 20px;
+		}
+
+		.plan-content {
+			padding: 20px;
+		}
+
+		.price {
+			font-size: 2.5rem;
+		}
+
+		.plan-info h4 {
+			font-size: 1.2rem;
+		}
+
+		.plan-info p {
+			font-size: 0.95rem;
+		}
+
+		.spec-label, .spec-value {
+			font-size: 0.95rem;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.plan-header {
+			padding: 25px 15px 15px;
+		}
+
+		.plan-content {
+			padding: 15px;
+		}
+
+		.price {
+			font-size: 2.2rem;
+		}
+
+		.plan-icon {
+			font-size: 3.5rem;
+		}
+
+		.plan-header h3 {
+			font-size: 1.8rem;
+		}
+	}
+</style>

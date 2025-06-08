@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Features from '../components/Features.astro';
+import Plans from '../components/Plans.astro';
+import FAQ from '../components/FAQ.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+	<Header />
+	<main>
+		<Hero />
+		<Features />
+		<Plans />
+		<FAQ />
+		<Contact />
+	</main>
+	<Footer />
+</Layout>
+
+<script>
+	// Smooth scroll animation on load
+	const observerOptions = {
+		threshold: 0.1,
+		rootMargin: '0px 0px -50px 0px'
+	};
+
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('animate-fadeInUp');
+			}
+		});
+	}, observerOptions);
+
+	// Observe all sections
+	document.addEventListener('DOMContentLoaded', () => {
+		const sections = document.querySelectorAll('section');
+		sections.forEach(section => {
+			observer.observe(section);
+		});
+
+		// Animate elements on scroll
+		const animateElements = document.querySelectorAll('.animate-fadeInUp, .animate-slideInRight, .animate-slideInLeft');
+		animateElements.forEach(element => {
+			observer.observe(element);
+		});
+	});
+
+	// Header scroll effect
+	let lastScrollTop = 0;
+	const header = document.querySelector('.header') as HTMLElement;
+
+	window.addEventListener('scroll', () => {
+		const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		
+		if (scrollTop > 100) {
+			header?.classList.add('scrolled');
+			header && (header.style.background = 'rgba(255, 255, 255, 0.98)');
+			header && (header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)');
+		} else {
+			header?.classList.remove('scrolled');
+			header && (header.style.background = 'rgba(255, 255, 255, 0.95)');
+			header && (header.style.boxShadow = 'none');
+		}
+		
+		lastScrollTop = scrollTop;
+	});
+
+	// Add click animation to buttons
+	const buttons = document.querySelectorAll('.btn, .contact-btn');
+	buttons.forEach(button => {
+		(button as HTMLElement).addEventListener('click', () => {
+			(button as HTMLElement).style.transform = 'scale(0.95)';
+			setTimeout(() => {
+				(button as HTMLElement).style.transform = '';
+			}, 150);
+		});
+	});
+</script>
+</Layout>

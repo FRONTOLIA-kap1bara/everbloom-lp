@@ -1,0 +1,286 @@
+---
+---
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer-content">
+			<div class="footer-main">
+				<div class="footer-logo">
+					<a href="#top">
+						<img src="/everbloomtoumei.png" alt="EverBloom" class="footer-logo-image" />
+					</a>
+					<p>エバーブルーム</p>
+					<p>あなたの大切な瞬間を美しい動画に</p>
+				</div>
+				
+				<div class="footer-links">
+					<div class="footer-section">
+						<h4>サービス</h4>
+						<ul>
+							<li><a href="#features">特徴</a></li>
+							<li><a href="#plans">料金プラン</a></li>
+							<li><a href="#faq">よくある質問</a></li>
+						</ul>
+					</div>
+					
+					<div class="footer-section">
+						<h4>お問い合わせ</h4>
+						<ul>
+							<li><a href="https://lin.ee/jPvpa5H">LINE相談</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer-company">
+				<div class="company-info">
+					<h4>運営企業情報</h4>
+					<div class="company-details">
+						<div class="company-name">
+							<span class="company-label">企業名：</span>
+							<span class="company-value">FRONTOLIAインターネット</span>
+						</div>
+						<div class="company-website">
+							<span class="company-label">公式サイト：</span>
+							<a href="https://www.frontolia.com" target="_blank" rel="noopener noreferrer" class="company-link">
+								www.frontolia.com
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<p>&copy; 2025 FRONTOLIAインターネット. All rights reserved.</p>
+		</div>
+	</div>
+</footer>
+
+<style>
+	.footer {
+		background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+		color: white;
+		padding: 60px 0 20px;
+	}
+
+	.footer-content {
+		margin-bottom: 40px;
+	}
+
+	.footer-main {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		gap: 60px;
+		margin-bottom: 40px;
+	}
+
+	.footer-logo {
+		max-width: 400px;
+	}
+
+	.footer-logo-image {
+		height: 90px;
+		width: auto;
+		margin-bottom: 15px;
+		animation: float 3s ease-in-out infinite;
+		object-fit: contain;
+		filter: brightness(0) invert(1);
+	}
+
+	.footer-logo p {
+		font-size: 1.1rem;
+		color: rgba(255,255,255,0.8);
+		line-height: 1.6;
+	}
+
+	.footer-links {
+		display: flex;
+		gap: 60px;
+	}
+
+	.footer-section h4 {
+		font-size: 1.3rem;
+		margin-bottom: 20px;
+		color: #00c9ff;
+		font-weight: 700;
+	}
+
+	.footer-section ul {
+		list-style: none;
+	}
+
+	.footer-section ul li {
+		margin-bottom: 12px;
+	}
+
+	.footer-section ul li a {
+		color: rgba(255,255,255,0.8);
+		text-decoration: none;
+		transition: all 0.3s ease;
+		position: relative;
+	}
+
+	.footer-section ul li a:hover {
+		color: #00c9ff;
+		padding-left: 10px;
+	}
+
+	.footer-company {
+		padding: 30px 0;
+		border-top: 1px solid rgba(255,255,255,0.1);
+	}
+
+	.company-info {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.company-info h4 {
+		font-size: 1.4rem;
+		margin-bottom: 20px;
+		color: #92fe9d;
+		text-align: center;
+		font-weight: 700;
+	}
+
+	.company-details {
+		background: rgba(255,255,255,0.1);
+		border-radius: 15px;
+		padding: 25px;
+		backdrop-filter: blur(10px);
+	}
+
+	.company-name,
+	.company-website {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.company-website {
+		margin-bottom: 0;
+	}
+
+	.company-label {
+		font-weight: 600;
+		color: #00c9ff;
+		min-width: 100px;
+		flex-shrink: 0;
+	}
+
+	.company-value {
+		color: rgba(255,255,255,0.9);
+		font-weight: 500;
+	}
+
+	.company-link {
+		color: #92fe9d;
+		text-decoration: none;
+		font-weight: 500;
+		transition: all 0.3s ease;
+		padding: 5px 10px;
+		border-radius: 8px;
+		background: rgba(146, 254, 157, 0.1);
+	}
+
+	.company-link:hover {
+		background: rgba(146, 254, 157, 0.2);
+		transform: translateY(-2px);
+	}
+
+	.footer-bottom {
+		text-align: center;
+		padding-top: 20px;
+		border-top: 1px solid rgba(255,255,255,0.1);
+	}
+
+	.footer-bottom p {
+		color: rgba(255,255,255,0.6);
+		font-size: 0.9rem;
+	}
+
+	/* タブレット対応 */
+	@media (max-width: 1024px) {
+		.footer-main {
+			gap: 40px;
+		}
+
+		.footer-links {
+			gap: 40px;
+		}
+
+		.footer-logo-image {
+			height: 80px;
+		}
+
+		.company-details {
+			padding: 20px;
+		}
+	}
+
+	/* スマホ対応 */
+	@media (max-width: 768px) {
+		.footer-main {
+			grid-template-columns: 1fr;
+			gap: 30px;
+		}
+
+		.footer-links {
+			flex-direction: column;
+			gap: 25px;
+		}
+
+		.footer-logo-image {
+			height: 70px;
+		}
+
+		.footer {
+			padding: 40px 0 20px;
+		}
+
+		.company-name,
+		.company-website {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 5px;
+		}
+
+		.company-label {
+			min-width: auto;
+		}
+
+		.company-details {
+			padding: 18px;
+		}
+
+		.company-info h4 {
+			font-size: 1.2rem;
+		}
+	}
+
+	/* 小さなスマホ対応 */
+	@media (max-width: 480px) {
+		.footer-logo-image {
+			height: 60px;
+		}
+
+		.footer-logo p {
+			font-size: 1rem;
+		}
+
+		.footer-section h4 {
+			font-size: 1.1rem;
+		}
+
+		.company-details {
+			padding: 15px;
+		}
+
+		.company-info h4 {
+			font-size: 1.1rem;
+		}
+	}
+</style>
